@@ -343,6 +343,16 @@
     <span class="post-meta-divider">|</span>
 
 <!-- 不蒜子计数初始值纠正 -->
+<script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+$(document).ready(function() {
+    var checkCount = setInterval(function() {
+        if ($("#busuanzi_container_site_pv").css("display") != "none") {
+            clearInterval(checkCount);
+        }
+    }, 500);
+});
+</script>
 <script>
 $(document).ready(function() {
 
