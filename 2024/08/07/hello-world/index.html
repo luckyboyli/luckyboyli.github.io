@@ -304,6 +304,11 @@
 
           </div>
           
+    
+  <div class="comments">
+    <div id="lv-container" data-id="city" data-uid="TlzvkaZaR82LRXJ1f5IL"></div>
+  </div>
+  
 
 <script>
   window.addEventListener('tabs:register', () => {
@@ -385,10 +390,10 @@
     </div>
     <ul class="links-of-blogroll-list">
         <li class="links-of-blogroll-item">
-          <a href="https://www.icourse163.org/%20||%20fab%20fa-graduation-cap" title="https:&#x2F;&#x2F;www.icourse163.org&#x2F; || fab fa-graduation-cap" rel="noopener" target="_blank">请滚去学习</a>
+          <a href="https://www.icourse163.org/%20||%20fas%20fa-graduation-cap" title="https:&#x2F;&#x2F;www.icourse163.org&#x2F; || fas fa-graduation-cap" rel="noopener" target="_blank">请滚去学习</a>
         </li>
         <li class="links-of-blogroll-item">
-          <a href="https://hifiti.com/thread-530.htm%20||%20fab%20fa-music" title="https:&#x2F;&#x2F;hifiti.com&#x2F;thread-530.htm || fab fa-music" rel="noopener" target="_blank">听会音乐</a>
+          <a href="https://hifiti.com/%20||%20fas%20fa-music" title="https:&#x2F;&#x2F;hifiti.com&#x2F; || fas fa-music" rel="noopener" target="_blank">听会音乐</a>
         </li>
     </ul>
   </div>
@@ -509,6 +514,22 @@
   
 
   
+
+<script>
+NexT.utils.loadComments(document.querySelector('#lv-container'), () => {
+  window.livereOptions = {
+    refer: location.pathname.replace(CONFIG.root, '').replace('index.html', '')
+  };
+  (function(d, s) {
+    var j, e = d.getElementsByTagName(s)[0];
+    if (typeof LivereTower === 'function') { return; }
+    j = d.createElement(s);
+    j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+    j.async = true;
+    e.parentNode.insertBefore(j, e);
+  })(document, 'script');
+});
+</script>
 
 </body>
 </html>
